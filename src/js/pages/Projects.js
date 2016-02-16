@@ -24,17 +24,6 @@ let homerProjects = [
 	}
 ];
 
-// var ProjectList = React.createClass({
-// 	render: function() {
-		
-// 		return(
-// 			<ul className="project-list">
-// 				{homerProjects.map(function (project) { return <li>{project.name}</li> })}
-// 				{homerProjects.map((project) => {return <li>{project.description}</li> })}
-// 			</ul>
-// 		) 
-// 	}
-// });
 var ProjectList = React.createClass({
 	render: function() {
 		
@@ -42,7 +31,7 @@ var ProjectList = React.createClass({
 			<div className="project-list">
 				{homerProjects.map( function (project) { 
 					return (
-						<div key={project.name} class="project-box">
+						<div key={project.name} class="inner-project-box">
 							<h4>{project.name}</h4>
 							<img src={project.img} />
 							<p>{project.description}</p>
@@ -55,14 +44,15 @@ var ProjectList = React.createClass({
 		) 
 	}
 });
+
 export default class Projects extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<div className="project-box">
 				<h1>Featured Projects</h1>
-				<img src="https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png" />
-				<ProjectList data={homerProjects} />
+
+				<ProjectList />
 			</div>
 		);
 	}
