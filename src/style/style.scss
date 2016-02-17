@@ -1,0 +1,152 @@
+$main-color: #14AACC;
+$second-color: #FF0062;
+$text-color: #FFEA19;
+
+* {
+	box-sizing: border-box;
+}
+
+.app {
+	background-color: $main-color;
+	color: $text-color;
+	font-family: Lato;
+	display: flex;
+
+	.react-layout {
+		width: 100%;
+	}
+
+	.nav{
+		display: flex;
+		width: 60%;
+		margin: 3% auto;
+		justify-content: space-around;
+
+		.btn {
+			background-color: transparent;
+			color: $text-color;
+			margin: 0 auto;
+			padding: 10px 15px;
+			border-radius: 5%;
+			border: 1px solid $text-color;
+			text-decoration: none;
+			text-align: center;
+			vertical-align: middle;
+			align-self: center;
+			line-height: 1.6;
+			font-size: 1.25em;
+			
+			&:hover {
+				color: $second-color;
+				border-color: $second-color;
+			}
+		}
+	}
+}
+
+.header-wrapper {
+	display: flex;
+	flex-direction: column;
+	background-color: $main-color - 10;
+
+	.nameplate {
+		margin: 30px auto 0;
+		h1 {
+			font-size: 3rem;
+			font-family: 'Walter Turncoat';
+			text-align: center;
+			margin-bottom: 0;
+		}
+	}
+	.subheader{
+		text-align: center;
+		font-family: 'Lato';
+	}
+}
+
+.about-box {
+	width: 80% ;
+	margin: 0 auto;
+
+	h1 {
+		text-decoration: underline;
+	}
+
+	img {
+		float: right;
+	}
+
+	p {
+		line-height: 1.4;
+		font-size: 1.25em;
+	}
+
+}
+
+.project-box {
+	width: 80%;
+	margin: 0 auto;
+
+	.project-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		flex-direction: row;
+	}
+
+	.inner-project-box {
+		display: flex;
+		flex-direction: column;
+		max-width: 40%;
+		margin: 5%;
+
+		h4 {
+			font-size: 1.33em;
+			border: 1px solid $text-color;
+			border-radius: 4%;
+			box-shadow: 0 8px 6px -6px $main-color - 20;
+			padding: 2%;
+		}
+		div {
+			width: 100%;
+
+			img {
+				width: 100%;
+				box-shadow: 0 8px 6px -6px $main-color - 20;
+			}
+		}
+	}
+}
+
+.resume-box {
+	width: 80%;
+	margin: 0 auto;
+
+	p {
+		font-size: 1.25em;
+		line-height: 1.4;
+
+		.struck {
+			text-decoration: line-through;
+			color: $text-color - 50;
+		}
+		.correction {
+			color: red - 30;
+			font-family: 'Walter Turncoat';
+			font-size: 1.33em;
+		}
+	}
+
+	h4 {
+		font-size: 1.5em;
+	}
+
+	li {
+		font-size: 1.25em;
+	}
+}
+
+
+body {
+	background-color: $main-color - 30;
+}

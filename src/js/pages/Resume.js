@@ -18,9 +18,9 @@ var PrintJobList = React.createClass({
 export default class Settings extends React.Component {
 	render() {
 		return (
-			<div className="resume-box">
+			<div class="resume-box">
 				<h4>Education</h4>
-				<p>Springfield High graduate - <span className="struck">1974</span> <span className="correction">1993</span></p>
+				<p>Springfield High graduate - <span class="struck">1974</span> <span class="correction">1993</span></p>
 				<p>Springfield University - 1994</p>
 				<h4>Homer has had over 800 jobs including...</h4>
 				<PrintJobList />
