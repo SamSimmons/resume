@@ -7,7 +7,7 @@ var PrintJobList = React.createClass({
 		return (
 			<ul>
 				{homerJobs.map( function(job){
-					return <li key={index}>{job}</li>
+					return <li key={job}>{job}</li>
 				})
 			}
 			</ul>
