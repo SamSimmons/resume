@@ -101,3 +101,17 @@
 
 body {
   background-color: #008cae; }
+
+@media (max-width: 600px) {
+  .app .nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+    .app .nav .btn {
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 10px; }
+  .app .project-box {
+    width: 100%; }
+    .app .project-box .inner-project-box {
+      max-width: 100%; } }
